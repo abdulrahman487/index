@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <h2>أهلاً وسلاً بكم في أول صفحة ويب <br>م/عبدالرحمن غالب</h2>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body dir="rtl">
+    <input name='num1' id="num1" type="text" placeholder="Enter First number:">
+    <input name='num2' id="num2" type="text" placeholder="Enter Second number:">
+
+    <br>
+    <br>
+
+    <button onclick="sum(parseInt(num1.value),parseInt(num2.value));">+</button>
+    <button onclick="sub(parseInt(num1.value),parseInt(num2.value));">-</button>
+    <button onclick="mul(parseInt(num1.value),parseInt(num2.value));">*</button>
+    <button onclick="div(parseInt(num1.value),parseInt(num2.value));">/</button>
+    <br>
+    <br>
+    <input id="result" name='res' type="text" placeholder="Result:">
+
+    
+    </body>
+    <script>
+        var num1 = document.getElementById('num1');
+        var num2 = document.getElementById('num2');
+
+        function sum(num1, num2) {
+            console.log(num1 + num2);
+            document.getElementById('result').value = num1 + num2;
+        }
+        function sub(num1, num2) {
+            console.log(num1 - num2);
+            document.getElementById('result').value = num1 - num2;
+        }
+        function mul(num1, num2) {
+            console.log(num1 * num2);
+            document.getElementById('result').value = num1 * num2;
+        }
+        function div(num1, num2) {
+            console.log(num1 / num2);
+            document.getElementById('result').value = num1 / num2;
+        }
+    </script>
+    <!-- <script src="main.js"></script> -->
+
+</html>
